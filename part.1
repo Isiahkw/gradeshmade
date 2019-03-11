@@ -2,24 +2,24 @@
 int main(){
   int n, i;
     float num[100], sum=0.0,average;
-    cout << "Enter Number of Assignments: ";
+    cout << "Enter Number of Assignments: "; //this is asking for the number of assignments
     cin>> n;
-    while (n>100 || n<=0);
+    while (n>100 || n<=0); //this is the range for n, from 0-100
    {
         cout << "Error! number should in range of (1 to 100)." << endl;
-        cout << "Enter the number again: ";
-        cin >> n;
+        cout << "Enter the number again: ";     // if the number doesn't follow the command of being from 0-100 the program will ask for another number
+        cin >> n; 
     }
 
     for(i = 0; i < n; ++i)
     {
-        cout << i + 1 << ". Enter number: ";
+        cout << i + 1 << ". Enter number: ";  
         cin >> num[i];
         sum += num[i];
     }
 
     average = sum / n;
-    cout << "Average = " << average;
+    cout << "Average = " << average; // this is calculatin the average grade
 
     return 0;
 }
